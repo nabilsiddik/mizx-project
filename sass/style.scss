@@ -1,0 +1,171 @@
+/** Css variables **/
+$primary : #3292a6;
+$primary-overlay: rgba(50,146,156,0.7);
+
+
+body{
+    margin-top: 93px;
+}
+
+/** Navigation **/
+.navbar{
+    box-shadow: 2px 2px 5px $primary;
+    background: #fff;
+    opacity: .9;
+    
+
+    .nav-item{
+        font-size: 1.4rem;
+        padding-right: 20px;
+    }
+    .nav-item:last-child{
+        padding-right: 0px;
+    }
+    .nav-link{
+        color: #252525!important;
+    }
+    .nav-link:hover{
+        color: $primary!important;
+    }
+}
+
+/** showcase **/
+#showcase{
+    background-image: url('../img/mountains.jpg');
+    min-height: 600px;
+    position: relative;
+
+    .primary-overlay{
+        background: $primary-overlay;
+        min-height: 600px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    a{
+        border-radius: 0px;
+    }
+}
+/** Subscribe **/
+#subscribe{
+    background: #1E1E1E;
+
+    .form-group{
+        margin-bottom: 0;
+    }
+    .form-control-lg, button{
+        border-radius: 0px;
+    }
+}
+/** Info box **/
+#info_box{
+
+    .card{
+        border: 1px solid #2B7C8D;
+    }
+    h3{
+        color: #2B7C8D;
+    }
+    .card-second, .card-last{
+        background: #2B7C8D;
+        
+    }
+    .card-second h3, .card-last h3{
+        color: #fff; 
+    }
+    .card-second p, .card-last p{
+        color: #fff; 
+    }
+}
+
+/** About Us **/
+#about h1{
+    color: #256A78;
+}
+
+
+/** Author **/
+#authors{
+    img{
+       margin-top: -66px;
+    }
+    .authors_text p{
+        margin-bottom: 78px;
+    }
+    .card:hover{
+        background: #2B7C8D;
+        color: #fff;
+
+        .fab{
+            color: #fff;
+        }
+    }
+    .fab{
+        font-size: 25px;
+        padding: 20px;
+        color: #256A78;
+    }
+    .flex-row{
+        padding-bottom: 10px;
+    }
+}
+
+/** contact **/
+#contact{
+    img{
+        margin-top: 120px;
+    }
+    .spec_user_icon{
+        font-size: 23px;
+    }
+    input[type="submit"]{
+        background: #297889;
+    }
+
+}
+/** footer **/
+#footer{
+    background: #2B7C8D;
+
+    a{
+        color: #fff;
+    }
+}
+
+
+/** Responsive Media **/
+@media(max-width: 1199px){
+    #showcase h1{
+        font-size: 80px;
+    }
+}
+@media(max-width: 991px){
+    #main_nav .nav-item{
+        font-size: 1.2em;
+        padding-right: 10px;
+    }
+}
+@media(max-width: 767px){
+    #showcase h1{
+        font-size: 70px;
+        margin-top: 85px!important;
+    }
+}
+@media(max-width: 419px){
+    #showcase h1{
+        font-size: 50px;
+        margin-top: 100px!important;
+    }
+}
+@media(max-width: 575px){
+    #contact h1{
+        font-size: 40px;
+    }
+    #contact h1, p{
+        text-align: center;
+    }
+}
+
+
